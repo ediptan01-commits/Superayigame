@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Süper Ayı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="game">
+
+        <div id="menu">
+            <h1>🐻 SÜPER AYI</h1>
+            <p>Macera şimdi başlıyor!</p>
+            <button id="startButton">OYUNA BAŞLA</button>
+        </div>
+
+        <div id="hud">
+            <div>❤️ <span id="health">3</span></div>
+            <div>🪙 <span id="coins">0</span></div>
+            <div>🏆 <span id="score">0</span></div>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+
+        <div id="controls">
+            <div class="left-controls">
+                <button id="left">◀</button>
+                <button id="right">▶</button>
+            </div>
+
+            <button id="jump">▲</button>
+        </div>
+
+    </div>
+
+    <script src="game.js"></script>
+
+</body>
+</html>
