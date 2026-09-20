@@ -2,41 +2,51 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Süper Ayı</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Süper Ayı 3D</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div id="game">
+<div id="game">
 
-        <div id="menu">
-            <h1>🐻 SÜPER AYI</h1>
-            <p>Macera şimdi başlıyor!</p>
+    <div id="loading">
+        <div class="loading-title">🐻 SÜPER AYI</div>
+        <div>3D dünya hazırlanıyor...</div>
+    </div>
+
+    <div id="hud">
+        <div class="hud-box">❤️ <span id="health">3</span></div>
+        <div class="hud-box">🪙 <span id="coins">0</span></div>
+        <div class="hud-box">🏆 <span id="score">0</span></div>
+    </div>
+
+    <div id="message"></div>
+
+    <div id="menu">
+        <div class="menu-box">
+            <div class="bear-logo">🐻</div>
+            <h1>SÜPER AYI</h1>
+            <p>3D Macera Dünyası</p>
             <button id="startButton">OYUNA BAŞLA</button>
         </div>
+    </div>
 
-        <div id="hud">
-            <div>❤️ <span id="health">3</span></div>
-            <div>🪙 <span id="coins">0</span></div>
-            <div>🏆 <span id="score">0</span></div>
+    <div id="controls">
+
+        <div id="joystick">
+            <div id="stick"></div>
         </div>
 
-        <canvas id="gameCanvas"></canvas>
-
-        <div id="controls">
-            <div class="left-controls">
-                <button id="left">◀</button>
-                <button id="right">▶</button>
-            </div>
-
-            <button id="jump">▲</button>
-        </div>
+        <button id="jumpButton">↑</button>
 
     </div>
 
-    <script src="game.js"></script>
+</div>
+
+<script type="module" src="game.js"></script>
 
 </body>
 </html>
